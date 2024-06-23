@@ -1,8 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://1gbmlnbsdnpj"]
+[gd_scene load_steps=17 format=3 uid="uid://1gbmlnbsdnpj"]
 
 [ext_resource type="Texture2D" uid="uid://cwgiu58dtwu6u" path="res://Assets/grey stone wall.png" id="1_7t6yh"]
 [ext_resource type="Texture2D" uid="uid://cbrchouqyrt0m" path="res://Assets/GRAYROCKS.png" id="1_d5ynf"]
 [ext_resource type="PackedScene" uid="uid://chmiy8awg5bf" path="res://Player/player.tscn" id="2_cql2c"]
+[ext_resource type="PackedScene" uid="uid://43co821jo2kl" path="res://Enemies/guard.tscn" id="4_feter"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_a41gy"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -114,4 +115,41 @@ skeleton = NodePath("../..")
 shape = SubResource("ConcavePolygonShape3D_0gfmd")
 
 [node name="player" parent="." instance=ExtResource("2_cql2c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.73899, 5.96046e-07, -8.34354)
+transform = Transform3D(-0.558426, 0, 0.829554, 0, 1, 0, -0.829554, 0, -0.558426, 9.73899, 5.96046e-07, -8.34354)
+
+[node name="enemies" type="Node3D" parent="."]
+
+[node name="guard" parent="enemies" instance=ExtResource("4_feter")]
+
+[node name="guard2" parent="enemies" instance=ExtResource("4_feter")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.58683, 0, 6.73672)
+
+[node name="guard3" parent="enemies" instance=ExtResource("4_feter")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.55257, 0, 10.1033)
+
+[node name="guard4" parent="enemies" instance=ExtResource("4_feter")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.14906, 0, 13.2042)
+
+[node name="guard5" parent="enemies" instance=ExtResource("4_feter")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0247, 0, 3.99316)
+
+[node name="guard6" parent="enemies" instance=ExtResource("4_feter")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.4321, 0, -6.7809)
+
+[node name="guard7" parent="enemies" instance=ExtResource("4_feter")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4321, 0, -13.246)
+
+[node name="guard8" parent="enemies" instance=ExtResource("4_feter")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.64266, 0, -15.2236)
+
+[node name="guard9" parent="enemies" instance=ExtResource("4_feter")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.44158, 0, -6.46769)
+
+[node name="guard10" parent="enemies" instance=ExtResource("4_feter")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.44158, 0, 11.9809)
+
+[node name="guard11" parent="enemies" instance=ExtResource("4_feter")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0359, 0, 15.0206)
+
+[node name="guard12" parent="enemies" instance=ExtResource("4_feter")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0359, 0, 5.74859)
