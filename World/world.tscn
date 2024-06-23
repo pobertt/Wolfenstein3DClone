@@ -126,30 +126,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.58683, 0, 6.73672)
 
 [node name="guard3" parent="enemies" instance=ExtResource("4_feter")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.55257, 0, 10.1033)
-
-[node name="guard4" parent="enemies" instance=ExtResource("4_feter")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.14906, 0, 13.2042)
-
-[node name="guard5" parent="enemies" instance=ExtResource("4_feter")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0247, 0, 3.99316)
-
-[node name="guard6" parent="enemies" instance=ExtResource("4_feter")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.4321, 0, -6.7809)
-
-[node name="guard7" parent="enemies" instance=ExtResource("4_feter")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4321, 0, -13.246)
-
-[node name="guard8" parent="enemies" instance=ExtResource("4_feter")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.64266, 0, -15.2236)
-
-[node name="guard9" parent="enemies" instance=ExtResource("4_feter")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.44158, 0, -6.46769)
-
-[node name="guard10" parent="enemies" instance=ExtResource("4_feter")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.44158, 0, 11.9809)
-
-[node name="guard11" parent="enemies" instance=ExtResource("4_feter")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0359, 0, 15.0206)
-
-[node name="guard12" parent="enemies" instance=ExtResource("4_feter")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0359, 0, 5.74859)

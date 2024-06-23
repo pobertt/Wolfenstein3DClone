@@ -44,3 +44,9 @@ func _physics_process(delta):
 func shoot():
 	if ray3d.is_colliding() and ray3d.get_collider().has_method("die"):
 		ray3d.get_collider().die()
+
+func damage():
+	player_health -= 10
+	print(player_health)
+	if player_health <= 0:
+		queue_free()
