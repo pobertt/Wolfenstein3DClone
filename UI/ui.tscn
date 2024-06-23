@@ -1,0 +1,168 @@
+[gd_scene load_steps=18 format=3 uid="uid://cq7s7sv42ahov"]
+
+[ext_resource type="Script" path="res://UI/ui.gd" id="1_f5niw"]
+[ext_resource type="Texture2D" uid="uid://bxu6aqvxkcuk" path="res://Assets/wolfweapons.png" id="1_rmrlr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dxdil"]
+atlas = ExtResource("1_rmrlr")
+region = Rect2(64, 32, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jcsq4"]
+atlas = ExtResource("1_rmrlr")
+region = Rect2(128, 32, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1uk41"]
+atlas = ExtResource("1_rmrlr")
+region = Rect2(192, 32, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7hgs"]
+atlas = ExtResource("1_rmrlr")
+region = Rect2(0, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5cnho"]
+atlas = ExtResource("1_rmrlr")
+region = Rect2(64, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfkkv"]
+atlas = ExtResource("1_rmrlr")
+region = Rect2(128, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccil4"]
+atlas = ExtResource("1_rmrlr")
+region = Rect2(192, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hjxih"]
+atlas = ExtResource("1_rmrlr")
+region = Rect2(256, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tmkxc"]
+atlas = ExtResource("1_rmrlr")
+region = Rect2(64, 96, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dub3n"]
+atlas = ExtResource("1_rmrlr")
+region = Rect2(128, 96, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oyvcf"]
+atlas = ExtResource("1_rmrlr")
+region = Rect2(192, 96, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixfof"]
+atlas = ExtResource("1_rmrlr")
+region = Rect2(64, 64, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yyn5u"]
+atlas = ExtResource("1_rmrlr")
+region = Rect2(128, 64, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uxllu"]
+atlas = ExtResource("1_rmrlr")
+region = Rect2(192, 64, 64, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pirt4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dxdil")
+}],
+"loop": false,
+"name": &"gun_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jcsq4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1uk41")
+}],
+"loop": false,
+"name": &"gun_shoot",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b7hgs")
+}],
+"loop": false,
+"name": &"knife_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5cnho")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wfkkv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ccil4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hjxih")
+}],
+"loop": false,
+"name": &"knife_stab",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tmkxc")
+}],
+"loop": false,
+"name": &"minigun_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dub3n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oyvcf")
+}],
+"loop": false,
+"name": &"minigun_shoot",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ixfof")
+}],
+"loop": false,
+"name": &"smg_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yyn5u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uxllu")
+}],
+"loop": false,
+"name": &"smg_shoot",
+"speed": 12.0
+}]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_f5niw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(550, 488)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_pirt4")
+animation = &"minigun_shoot"
+autoplay = "knife_idle"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -576.0
+offset_top = -80.0
+offset_right = 576.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.0352941, 0.0588235, 0.556863, 1)

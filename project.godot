@@ -15,6 +15,16 @@ run/main_scene="res://World/world.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*res://global.gd"
+
+[display]
+
+window/size/mode=3
+window/size/borderless=true
+window/stretch/mode="canvas_items"
+
 [input]
 
 forward={
